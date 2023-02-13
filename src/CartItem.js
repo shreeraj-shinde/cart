@@ -10,7 +10,24 @@ const CartItem = () => {
         <div style={{ fintSize: 25 }}>Title</div>
         <div style={{ color: "#777" }}>Price </div>
         <div style={{ color: "#777" }}> Qty</div>
-        <div className="cart-item-actions">{/**Buttons */}</div>
+        <div className="cart-item-actions">
+          {/**Buttons */}
+          <img
+            alt="increase"
+            src="https://cdn-icons-png.flaticon.com/512/992/992651.png"
+            className="action-icons"
+          />
+          <img
+            alt="decrease"
+            src="https://cdn-icons-png.flaticon.com/512/992/992683.png"
+            className="action-icons"
+          />
+          <img
+            alt="delete"
+            src="https://cdn-icons-png.flaticon.com/512/3132/3132919.png"
+            className="action-icons"
+          />
+        </div>
       </div>
     </div>
   );
