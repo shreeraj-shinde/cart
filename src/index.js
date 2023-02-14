@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import CartItem from "./CartItem";
-;
+
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -11,7 +11,7 @@ root.render(
 
   <React.StrictMode>
     <App />
-    <CartItem title={''} quantity={0} price = {0} img={''}/>
+   
   </React.StrictMode>
 );
 
