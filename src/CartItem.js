@@ -4,7 +4,7 @@ import React from "react";
 const CartItem = (props) => {
   const [count ,SetCount] = useState(0)
   const [title ,SetTitle] = useState("Mobile Phone")
-  const[price,SetPrice] = useState(999)
+  const[price,SetPrice] = useState(99)
   
   const incQty = () =>{
     
