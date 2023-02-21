@@ -31,7 +31,7 @@ const CartItem = (props) => {
       </div>
       <div className="right-block">
         <div style={{ fintSize: 25 }}>Product Name : {title}</div>
-        <div style={{ color: "#777" }}>Price : {price} </div>
+        <div style={{ color: "#777" }}>Price : {price}</div>
         <div style={{ color: "#777" }}>Quantity : {count}</div>
         <div className="cart-item-actions">
           {/**Buttons */}
