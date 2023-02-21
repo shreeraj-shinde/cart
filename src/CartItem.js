@@ -5,10 +5,24 @@ const CartItem = (props) => {
   const [count ,SetCount] = useState(0)
   const [title ,SetTitle] = useState("Mobile Phone")
   const[price,SetPrice] = useState(999)
+  
   const incQty = () =>{
-    var nprice;
+    
     SetCount(count+1);
-    SetPrice(nprice = nprice + price);
+    SetPrice(price*2);
+  }
+  const decQuantity = () =>{
+    if(count === 0){
+      return
+    }else{
+      SetCount(count-1)
+      SetPrice(price - price)
+    }
+  }
+
+  const deleteall = () =>{
+    SetPrice(0);
+    SetCount(0);
   }
   return (
     <div className="cart-item">
@@ -31,13 +45,13 @@ const CartItem = (props) => {
             alt="decrease"
             src="https://cdn-icons-png.flaticon.com/512/992/992683.png"
             className="action-icons"
-            onClick={()=>SetCount(count-1)}
+            onClick={decQuantity}
           />
           <img
             alt="delete"
             src="https://cdn-icons-png.flaticon.com/512/3132/3132919.png"
             className="action-icons"
-            onClick={()=>SetCount(0)}
+            onClick={deleteall}
           />
         </div>
       </div>
